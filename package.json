@@ -15,6 +15,9 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@types/lint-staged": "^13.3.0",
+    "lint-staged": "^15.2.9",
+    "prettier": "^3.4.2",
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
     "@eslint/js": "^9.13.0",
