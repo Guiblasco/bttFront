@@ -1,18 +1,18 @@
 import {
   createBrowserRouter,
   createRoutesFromElements,
-  Navigate,
   Route,
 } from "react-router-dom";
 import App from "../components/App/App";
+import NotFoundPage from "../pages/NotFoundPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route index element={<Navigate to="/inicio" />} />
-      <Route path="club" element={<Navigate to="/club" />} />
-      <Route path="contacto" element={<Navigate to="/contacto" />} />
-      <Route path="calendario" element={<Navigate to="/calendario" />} />
+      <Route index element={<NotFoundPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Route>,
   ),
 );
